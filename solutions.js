@@ -43,3 +43,17 @@ const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is 
 const cleanText = sentence.replace(/[^a-zA-Z0-9 ]/g, "");
 
 console.log(cleanText);
+
+//1c
+Problem;
+//1.c. After cleaning the text in the sentence from question number b you will get the following text. Count the number of words in this text. Don't include words with only one letter.
+
+function WordCount(str) {
+  return str.split(" ").length;
+}
+
+console.log(
+  WordCount(
+    "I love teaching. If you do not love teaching what else can you love. I love Javascript if you do not love something which can give life to your appication what else can you love"
+  )
+);
